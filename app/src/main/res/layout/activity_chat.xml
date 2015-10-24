@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <ListView
+        android:id="@+id/chat_Listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:divider="@null" 
+        android:soundEffectsEnabled="true" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/cb0ChatLayoutMsg"
+        android:layout_width="fill_parent"
+      	android:layout_height="60dp"
+        android:background="@drawable/bg_chatbar_textmode"
+        android:orientation="horizontal" >
+
+
+        <EditText
+            android:id="@+id/chat_edit_input"
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dip"
+            android:layout_weight="5"
+            android:background="@drawable/edittext_sendmsg"
+            android:gravity="center_vertical"
+            android:imeOptions="flagNoExtractUi"
+            android:maxHeight="120dip"
+            android:maxLength="4000"
+            android:minHeight="46dip"
+            android:paddingTop="3dip" />
+
+        <Button
+            android:id="@+id/chat_btn_send"
+            android:layout_width="0dp"
+            android:layout_height="46dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/btn_chatbtn2"
+            android:minWidth="50dip"
+            android:text="发送"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
